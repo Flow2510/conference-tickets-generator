@@ -15,69 +15,71 @@
   <header>
     <img src="assets/images/logo-full.svg" alt="">
   </header>
-  <article class="form_article">
-    <section class="content">
-      <h2>Your Journey to Coding Conf 2025 Starts Here!</h2>
-      <p>Secure your spot at next year's biggest coding conference.</p>
-    </section>
-    <section class="form">
-      <form action="#">
-        <p>Upload Avatar</p>
-        <div class="avatar_input_container">          
-          <input type="file" name="avatar_input" id="avatar_input" placeholder="">
-          <div class="drop_box">
-            <label for="avatar_input">
-              <img src="assets/images/icon-upload.svg" alt="">
-              <p>Drag and drop or click to upload</p>
-            </label>
-          </div>
-          <span class="input_info">Upload your photo (JPG or PNG, max size: 500KB).</span>
-        </div>        
-        <div class="form_input_container">
-          <label for="name_input">Full Name</label>
-          <input type="text" name="name_input" id="name_input">
-          <label for="email_input">Email Address</label>
-          <input type="email" name="email_input" id="email_input" placeholder="example@email.com">
-          <p class="input_info error_email">Please enter a valid email adress</p>
-          <label for="git_input">GitHub Username</label>
-          <input type="text" name="git_input" id="git_input" placeholder="@yourusername">
-          <button type="submit" id="submit_button">Generate My Ticket</button>
-        </div>
-      </form>
-    </section>
-  </article>
-  <article class="ticket_article">
-    <section class="content">
-      <h2>Congrats, <span class="name" id="input_name_value"><!-- Full Name --></span>! Your ticket is ready.</h2>
-      <p>We've emailed your ticket to <span id="input_email_value"><!-- Email Address --></span> and will send updates in the run up to the event.</p>
-    </section>
-    <section class="ticket">
-      <div class="ticket_container">
-        <img src="assets/images/pattern-ticket.svg" alt="">
-        <div class="ticket_content">
-          <div class="conference">
-            <img src="assets/images/logo-mark.svg" alt="">
-            <div class="conference_date">
-              <h3>Coding Conf</h3>
-              <p>Jan 31, 2025 / Austin, TX</p>
+  <main>
+    <article class="form_article">
+      <section class="content">
+        <h2>Your Journey to Coding Conf 2025 Starts Here!</h2>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+      </section>
+      <section class="form">
+        <form action="#">
+          <p>Upload Avatar</p>
+          <div class="avatar_input_container">          
+            <input type="file" name="avatar_input" id="avatar_input" placeholder="">
+            <div class="drop_box">
+              <label for="avatar_input">
+                <img src="assets/images/icon-upload.svg" alt="">
+                <p>Drag and drop or click to upload</p>
+              </label>
             </div>
+            <span class="input_info">Upload your photo (JPG or PNG, max size: 500KB).</span>
+          </div>        
+          <div class="form_input_container">
+            <label for="name_input">Full Name</label>
+            <input type="text" name="name_input" id="name_input">
+            <label for="email_input">Email Address</label>
+            <input type="email" name="email_input" id="email_input" placeholder="example@email.com">
+            <p class="input_info error_email">Please enter a valid email adress</p>
+            <label for="git_input">GitHub Username</label>
+            <input type="text" name="git_input" id="git_input" placeholder="@yourusername">
+            <button type="submit" id="submit_button">Generate My Ticket</button>
           </div>
-          <div class="info">
-            <img src="assets/images/image-avatar.jpg" alt="">
-            <div class="profil">
-              <div class="profil_content">
-                <span id="name_ticket" class="name"><!-- Full Name --></span>              
-                <span id="git_ticket" class="git">@<!-- Git profil --></span>
+        </form>
+      </section>
+    </article>
+    <article class="ticket_article">
+      <section class="content">
+        <h2>Congrats, <span class="name" id="input_name_value"><!-- Full Name --></span>! Your ticket is ready.</h2>
+        <p>We've emailed your ticket to <span id="input_email_value"><!-- Email Address --></span> and will send updates in the run up to the event.</p>
+      </section>
+      <section class="ticket">
+        <div class="ticket_container">
+          <img src="assets/images/pattern-ticket.svg" alt="">
+          <div class="ticket_content">
+            <div class="conference">
+              <img src="assets/images/logo-mark.svg" alt="">
+              <div class="conference_date">
+                <h3>Coding Conf</h3>
+                <p>Jan 31, 2025 / Austin, TX</p>
+              </div>
+            </div>
+            <div class="info">
+              <img src="assets/images/image-avatar.jpg" alt="">
+              <div class="profil">
+                <div class="profil_content">
+                  <span id="name_ticket" class="name"><!-- Full Name --></span>              
+                  <span id="git_ticket" class="git">@<!-- Git profil --></span>
+                </div>
               </div>
             </div>
           </div>
+          <div class="ticket_number_container">
+            <span class="ticket_number">#01609<!-- Numero fixe ou si motivé faire un apparaitre un numero random entre 1 et 10 000--> </span>
+          </div>
         </div>
-        <div class="ticket_number_container">
-          <span class="ticket_number">#01609<!-- Numero fixe ou si motivé faire un apparaitre un numero random entre 1 et 10 000--> </span>
-        </div>
-      </div>
-    </section>
-  </article>
+      </section>
+    </article>
+  </main>
 </body>
 <script src="script.js"></script>
 </html>

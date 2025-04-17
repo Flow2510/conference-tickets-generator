@@ -1,0 +1,276 @@
+:root{
+    --title-color: hsl(0, 0%, 100%); 
+    --text-color: hsl(252, 6%, 83%);
+    --input-background: hsla(0, 0%, 100%, 0.1);
+    --border: hsla(0, 0%, 100%, 0.3);
+    --button-background: hsl(7, 88%, 67%);
+    --button-text: hsl(248, 70%, 10%);
+}
+
+html{
+    font-size: 20px;
+    font-family: "inconsolata";
+}
+
+*{
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg) , url(assets/images/pattern-circle.svg), url(assets/images/pattern-squiggly-line-top.svg), url(assets/images/pattern-circle.svg), url(assets/images/pattern-lines.svg), url(assets/images/background-mobile.png);
+    background-size: 70% ,30%, 30% ,30% , cover, cover;
+    background-position: bottom left , top 60% right -20% , top 3% right ,top -5% left -10%, top, center;
+    background-repeat: no-repeat;
+    padding: 1.5rem 1rem;
+    height: 100vh;
+    width: 100%;
+}
+
+.content{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+h2{
+    color: var(--title-color);
+    font-size: 1.3rem;
+    margin: 1rem 0 1rem 0;
+}
+
+p{
+    color: var(--text-color);
+    font-size: 0.85rem;
+    line-height: 1rem;
+}
+
+header img{
+    max-width: 150px;
+    display: flex;
+    margin: 0 auto;
+}
+
+#avatar_input{
+    display: none;
+}
+
+.drop_box{
+    background-color: var(--input-background);
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--input-background);
+    outline: 2px dashed var(--border);
+    margin: 0.7rem 0 0.3rem 0;
+}
+
+.drop_box p{
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+}
+
+.avatar_input_container label img{
+    width: 45px;
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--input-background);
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-background);
+    padding: 0.4rem;
+}
+
+.avatar_input_container{
+    margin-bottom: 1rem;
+}
+
+.input_info{
+    color: var(--text-color);
+    font-size: 0.55rem;
+    font-weight: 100;
+    margin: 1rem 0;
+}
+
+#upload::before{
+    content: url(assets/images/icon-info.svg);
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
+
+.form_input_container label{
+    color: var(--text-color);
+}
+
+.form_input_container input{
+    background-color: var(--input-background);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.form_input_container button{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0;
+    background-color: var(--button-background);
+    color: var(--button-text);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.form_article{
+    display: block; /*changer le display*/
+}
+
+.ticket_article{
+    display: none;
+}
+
+.conference{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.conference img{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.info img{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+.info{
+    display: flex;
+}
+
+.profil_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket_container{
+    position: relative;
+    color: var(--text-color);
+    width: 350px;
+    margin: 5rem auto;
+}
+
+.ticket_content{
+    position: absolute;
+    top: 0.9rem;
+    left: 0.9rem;
+}
+
+.conference_date p{
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.ticket_number{
+    position: absolute;
+    top: 45%;
+    right: 0rem;
+    width: fit-content;
+    transform: rotate(90deg);
+    opacity: 0.5;
+}
+
+.drop_box label:hover, .drop_box:hover, #submit_button{
+    cursor: pointer;
+}
+
+.error_email{
+    display: none;
+}
+
+input:focus{
+    outline: none;
+    background-color: var(--input-background);
+}
+
+input{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+input:hover, button:hover, .drop_box label:hover, .drop_box:hover{
+    outline: 1px solid white;
+    outline-offset: 3px;
+}
+
+.git{
+    display: flex;
+     align-items: center;
+}
+
+.git::before{
+    content: url(assets/images/icon-github.svg);
+}
+
+#input_email_value{
+    color: hsl(7, 86%, 67%);
+}
+
+#input_name_value{
+    color: hsl(7, 86%, 67%);
+}
+
+@media screen and (min-width:500px) {    
+    .content{
+        max-width: 800px;
+        margin: 2rem auto;
+    }
+
+    .form{
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .input_info{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+    header img{
+        max-width: 250px;
+    }
+    
+    h2{
+        font-size: 2.5rem;
+    }
+
+    .ticket_container{
+        scale: 1.5;
+        margin: 8rem auto;
+    }
+
+    .content{
+        margin: 1rem auto;
+    }
+
+    .content p{
+        font-size: 1.2rem;
+    }
+
+    body{
+        background-image: url(assets/images/pattern-squiggly-line-bottom-desktop.svg) , url(assets/images/pattern-circle.svg), url(assets/images/pattern-squiggly-line-top.svg), url(assets/images/pattern-circle.svg), url(assets/images/pattern-lines.svg), url(assets/images/background-desktop.png);
+        background-size: 50% ,13%, 30% ,15% , cover, cover;
+        background-position: bottom left , top 70% right 25% , top 3% right ,top -15% left 10%, top, center;
+        background-repeat: no-repeat;
+        padding: 1.5rem 1rem;
+        height: 100vh;
+        width: 100%;
+    }
+
+    header{
+        margin-bottom: 2rem;
+    }
+}
